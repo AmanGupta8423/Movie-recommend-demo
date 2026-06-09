@@ -1,3 +1,13 @@
+import os
+import gdown
+
+if not os.path.exists("similarity.pkl"):
+    gdown.download(
+        "https://drive.google.com/uc?id=1Jmj-72FgzgKN0A7AXCER38n35jlbRoeB",
+        "similarity.pkl",
+        quiet=False
+    )
+
 import streamlit as st
 import pickle
 import pandas as pd
